@@ -26,7 +26,8 @@ type Config struct {
 	PublicServer HTTPServer
 	DebugServer  DebugServer
 
-	KafkaConsumer KafkaConfig
+	KafkaConsumer    KafkaConfig
+	ClickHouseClient CHConfig
 }
 
 func InitConfig() (*Config, error) {
